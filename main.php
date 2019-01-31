@@ -17,7 +17,7 @@ require_once (MainPath.'/sort/selectionSort.php');
 
 function main()
 {
-    $arr = generateRandomArray(10000,100,110);
+    $arr = generateRandomArray(10000,0,10);
 
 //    dump($arr);
     TestSortTime("sort",$arr);
@@ -27,6 +27,10 @@ function main()
     TestSortTime("mergeSort",$arr);
     TestSortTime("mergeSortBu",$arr);
     TestSortTime("quickSort",$arr);
+    TestSortTime("quickSort1",$arr);
+    TestSortTime("quickSort2",$arr);
+
+//    quickSort2($arr);
 
 
 //

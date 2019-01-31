@@ -27,6 +27,11 @@ function dump($arr)
     echo '</pre>';
 }
 
+function dump_key($name,$key)
+{
+    echo ($name."的值是:".$key."\n");
+}
+
 /**毫秒时间
  * @return float
  */

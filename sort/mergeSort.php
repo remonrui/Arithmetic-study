@@ -52,6 +52,7 @@ function _mergeSort(&$arr, $l, $r)
 
     _mergeSort($arr, $mid+1, $r);
 
+    //对大于中间值的才比较，因为小于等于中间值的已经有序了
     if($arr[$mid] > $arr[$mid+1])
         _merge($arr, $l, $mid, $r);
 }
@@ -67,15 +68,10 @@ function _merge(&$arr, $l, $mid, $r)
 {
     $aux = [];
 
-//    dump($l);
-//    dump($mid);
-//    dump($r);
-
     for ($i = $l; $i<=$r; $i++ ){
         $aux[$i-$l] = $arr[$i];
     }
 
-//    dump($aux);
 
     $i = $l; $j = $mid+1;
 
