@@ -8,7 +8,7 @@
  */
 
 define('MainPath',__DIR__);
-require_once (MainPath.'/helper/helper.php');
+require_once (MainPath.'/base');
 require_once (MainPath.'/sort/insertSort.php');
 require_once (MainPath.'/sort/mergeSort.php');
 require_once (MainPath.'/sort/quickSort.php');
